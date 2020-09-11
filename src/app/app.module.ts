@@ -40,7 +40,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatDialogModule} from '@angular/material/dialog';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTableModule} from '@angular/material/table';
 import {InstancesTableComponent} from './pages/instance-list/components';
@@ -67,7 +67,6 @@ import {MatBadgeModule} from '@angular/material/badge';
     ServiceOverviewComponent,
     InstancesTableComponent,
     SwaggerUiComponent
-
   ],
   imports: [
     AuthModule,

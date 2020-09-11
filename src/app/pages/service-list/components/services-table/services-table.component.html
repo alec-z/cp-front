@@ -10,9 +10,12 @@
         <mat-icon class="employee-table-wrapper__icon">close</mat-icon>
       </button>
     </div>
+    <div>
     <button class="employee-table-wrapper__button" mat-mini-fab (click)="showFilterInput()">
       <mat-icon class="employee-table-wrapper__icon">search</mat-icon>
     </button>
+    <app-settings-menu></app-settings-menu>
+    </div>
   </mat-card-title>
   <mat-card-content class="employee-table__content">
     <table class="employee-table__table" mat-table [dataSource]="dataSource">

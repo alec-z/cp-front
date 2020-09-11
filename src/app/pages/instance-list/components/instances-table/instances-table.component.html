@@ -64,6 +64,15 @@
         </td>
       </ng-container>
 
+      <ng-container matColumnDef="kieConf" >
+        <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef >Kie Conf</th>
+        <td class="employee-table__table-body" mat-cell *matCellDef="let element">
+          <a [matTooltip]="element.endpointsOverview()" matTooltipClass="tooltipBreakLine">
+            2
+          </a>
+        </td>
+      </ng-container>
+
       <ng-container matColumnDef="status" >
         <th class="employee-table__table-header" mat-header-cell *matHeaderCellDef >Status </th>
         <td class="employee-table__table-body" mat-cell *matCellDef="let element">
